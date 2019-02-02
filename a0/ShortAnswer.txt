@@ -9,13 +9,8 @@ Trump.
 
 How is this approach misleading? How might you fix it?
 
-
-
-
-
-
-
-
+Answer:-
+Ofcourse, This approach is misleading because these four candidates do not follow the same number of accounts.DrjillStein and GovGaryJohnson follows 1642 and 3511 respectively. On the other side, HilaryClinton and realDonaldTrump follows 784 and 45 accordingly.After seeing the numbers, we can say that there is huge difference in number of friends. If candidate's number of friends are high then there is high chance that mutual friends is also high.For fixing this problem, number of friends of candidates should be approximately same.So after this, if we perform analysis on this data so may be we conclude the similarity.
 
 
 2. Looking at the output of your followed_by_hillary_and_donald function, why
@@ -23,28 +18,27 @@ do you think this user is followed by both Hilary Clinton and Donald Trump,
 who are rivals? Do some web searches to see if you can find out more
 information.
 
-
-
-
-
-
-
-
-
-
-
+Answer:
+Looking at the output of the followed_by_hillary_donald function gives the name that
+donald trump and hillary clinton both follows.There is only one 
+account named "WhiteHouse". This page is proof that they both are running for the president of United States in 2017. When I saw the "WhiteHouse" acount page, I conclude 
+that this is the official account of the "WhiteHouse" which posts latest updates 
+of the entire administration. My opinion is, even though they are rivals,they are just 
+to be in touch with the latest news of whitehouse, they both follows WhiteHouse.
 
 
 3. There is a big difference in how many accounts each candidate follows (Gary
 Johnson follows over 3K accounts, while Donald Trump follows less than
 50). Why do you think this is? How might that affect our analysis?
 
-
-
-
-
-
-
+Answer:
+These all were Presidential candidates From these four candidates, Donald trump &
+hillary clinton were major candidates, so there was high chance that they will win this election.On the other side, Gary Johnson and Jill Staine were minor candidates. So accoring to my point of view, these minor candidates' number of friends are very high because they might want to be popular & by following people they might can increase their popularity. 
+	
+We can also know that total number of friends on twitter may not be the exact number of friends in the actual life.
+So this does not mean donald trump has only 45 friends in actual life. So my point is, if the friends on twitter increases, then the possibility of being similar with other can also increase. So what we analysis does not reflect the actual similarities between 
+candidates. Even if the friends of all the candidates are approximately same, we just can compare
+similarities between them based on friends count. But can not compute actual similarity.
 
 
 4. The follower graph we've collected is incomplete. To expand it, we would
@@ -55,3 +49,14 @@ https://dev.twitter.com/rest/reference/get/friends/ids, how many requests will
 we have to make? Given how Twitter does rate limiting
 (https://dev.twitter.com/rest/public/rate-limiting), approximately how many
 minutes will it take to collect this data?
+
+Answer:
+We have 5984 total number of request.So, for each candidate we have to make new Twitter account. So,
+Four candidate + Total of their friends = number of request
+4 + 1644+3511+784+45 = 5984.
+Total time = 5984 minutes =  99 hours and 43 minutes.
+We know, friends/ids request, we can request only 15 for 15 minute time window.
+So, (total request/15 requests) = 398
+So, we need 398 windows.
+
+
